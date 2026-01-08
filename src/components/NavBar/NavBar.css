@@ -1,0 +1,115 @@
+ .navbar{
+background-color:rgba(0, 0, 0, 0.7);
+height: 5rem;
+width: 100vw;
+max-width:75rem;
+margin: 0 auto;
+padding: 0 2rem;
+display: flex;  
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index:3;
+
+}      
+.logo{
+  height: 4rem;
+  width: 4rem;
+  border: solid;
+  border-radius: 50%;
+  padding-bottom: 1rem;
+  object-fit: cover;
+  border-color: aqua;
+}
+.desktopMenuListItem{
+  margin: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;}
+
+.desktopMenuListItem:hover{
+  color:aqua;
+  transition: color 0.3s ease;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid aqua;
+}   
+.desktopMenuBtn{
+    display: flex;
+    color: black;
+    background: rgb(115, 117, 116);
+    border: 1px solid rgb(44, 12, 170);
+    border-radius: 8px;
+    justify-content:center;
+    width: 6rem;
+    height: 2.5rem;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 1.5rem 3rem;
+}  
+.desktopMenuBtn:hover{
+  background-color: aqua;
+}
+.logoBtn{
+    display: flex;
+    color: black;
+    justify-content:center;
+    width: 2rem;
+    height: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+
+}
+.logoBtn:hover{
+  color:aqua;
+  transition: color 0.3s ease;
+}
+.active{
+  color:yellow;
+  transition: color 0.3s ease;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid yellow;
+}
+.Mobmenu{
+  width: 30px;
+  height: fit-content;
+}
+.Mobmenu{
+    display:none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+.navMenu{
+  background: rgb(40, 40,40);
+  position:absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display:flex;
+  flex-direction: column;
+  padding: 2rem;
+  height:fit-content;
+  min-width: 15rem;
+  border-radius:1rem;
+
+}
+.ListItem{
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+
+}
+@media screen and (max-width:720px){
+    .Mobmenu{
+      display: flex;
+    }
+    .desktopMenus{
+      display:none;
+    }
+    .desktopMenuBtn{
+      display:none;
+    }
+}

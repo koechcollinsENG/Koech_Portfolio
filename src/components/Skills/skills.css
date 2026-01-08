@@ -1,0 +1,122 @@
+#Myskills{
+    overflow:hidden ;
+    width:100vw ;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTit{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #222, #333, #444;
+}
+
+.skillTit::before{
+    content: "";
+    position: absolute;
+    display: block;
+    object-fit: cover;
+    width: 25%;
+    height: 40%;
+    background-image: url('../../assets/skill.png');
+    margin: 0.5rem auto;
+    border-radius: 0.2rem;
+    background-size: cover;
+  background-position: center;
+  animation: moveBg 15s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveBg {
+  0% {
+    transform: translate(0%, 0%) scale(1);
+  }
+  50% {
+    transform: translate(25%, 25%) scale(1.2);
+  }
+  100% {
+    transform: translate(0%, 0%) scale(1);
+  }
+}
+.skillDescribe{
+    font-weight: 500;
+    font-size: 1.5rem;
+    max-width: 51rem;
+    padding: 1.2rem 4rem;
+    color:#333,#444,#555;
+}
+.skillBars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+}
+.skillBar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50,50);
+}
+.skillImage{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+.skillBar>h3{
+    font-size: 1rem;
+    margin-top: -1rem;
+    position: absolute;
+
+}
+.skillBar>p{
+    font-size: 0.75rem;
+    margin: 0 4rem;
+}
+@media screen and (max-width:880px) {
+.skillTit::before{
+    width: 44%;
+    height: 37%;
+}}
+@media screen and (max-width:740px) {
+.skillTit::before{
+    width: 37%;
+    height: 30%;
+}
+    .skillBar>p{
+        font-size: 2vw;
+    }
+     .skillBar>h3{
+        font-size: 2vw;
+
+    }
+}
+@media screen and (max-width:480px) {
+.skillTit::before{
+    width: 33%;
+    height: 27%;
+}
+    .skillBar>p{
+        font-size: 2vw;
+    }
+    .skillImage{
+        height:2.25rem;
+        width:2.25rem;
+
+    }
+    .skillBar>h3{
+        font-size: 5vw;
+
+    }
+    .skillDescribe{
+        width: 50%;
+    }
+}
