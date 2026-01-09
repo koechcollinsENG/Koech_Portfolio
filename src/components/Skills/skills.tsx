@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './skills.css';
 import Ux from '../../assets/UX Design.jpg';
 import Web from '../../assets/Web.jpg';

@@ -1,14 +1,13 @@
-import React from 'react';
+
 import './contact.css';
 import amazon from '../../assets/amazon.png';
 import facebook from '../../assets/facebook.png';
 import google from '../../assets/google.png';
 import airbnb from '../../assets/room-service.png';
-import netflix from '../../assets/Netflix.png';
 
 const Contact = () => {
   return (
-      <secton id="contactP">
+      <section id="contactP">
         <div className="clients">
           <h1 className="contactPtitle"> My Clients</h1>
           <p className="clientsDesc">
@@ -28,7 +27,7 @@ const Contact = () => {
 
         
 
-      </secton>
+      </section>
   );
 };
 

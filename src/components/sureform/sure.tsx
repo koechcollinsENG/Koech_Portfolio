@@ -1,11 +1,12 @@
 import { useState } from "react";
-import './sure.css';
+import "./sure.css";
+
 function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Validate
@@ -15,7 +16,9 @@ function ContactForm() {
     }
 
     // Only here if valid
-    alert("Thankyou so Much for reaching out! Ill get back to you as soon as possible!");
+    alert(
+      "Thank you so much for reaching out! I'll get back to you as soon as possible!"
+    );
 
     // Clear the input fields
     setName("");
@@ -24,7 +27,7 @@ function ContactForm() {
   };
 
   return (
-    <form  id="inguireF"  onSubmit={handleSubmit}>
+    <form id="inguireF" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Your Name"
